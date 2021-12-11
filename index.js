@@ -57,8 +57,8 @@ const users = [
 // };
 
 // // lodashを使った場合
-// const user = _.find(users, function(o) { return o.active; });
-// console.log( user );
+// const userNewArray = _.find(users, function(user) { return user.active; });
+// console.log( userNewArray );
 
 
 
