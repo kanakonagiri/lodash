@@ -1,5 +1,5 @@
 # [lodash](https://lodash.com/)
-[dosument](https://lodash.com/docs/4.17.15)
+[document](https://lodash.com/docs/4.17.15)
 
 ## 問題
 こちらの配列から、年齢が36歳のユーザーを取得してconsole.logで出力してください。
