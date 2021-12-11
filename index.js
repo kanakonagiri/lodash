@@ -33,16 +33,32 @@ const fruitsList = [
 // console.log(fruitsNewArray)
 // // -> ['apple', 'orange', 'cherry', 'grape', 'melon', 'banana']
 
-users = [
+
+// --------------------------------------------------
+// データの階層が深くても使える
+// --------------------------------------------------
+
+const users = [
     { 'user': 'user1', 'age': 36, 'active': true },
     { 'user': 'user2',   'age': 40, 'active': false },
-    { 'user': 'user3',   'age': 36, 'active': false }
+    { 'user': 'user3',   'age': 36, 'active': true }
 ];
 
-// // 条件に合う（第２引数で渡した関数がtrueを返す）ものだけに絞り込んで返す
-// const a = _.find(users, function(o) { return !o.active; });
-// console.log(a)
-// // => objects for ['user2']
+// // 条件に合うものを一件取得
+
+// // jsで書いた場合
+// let user;
+// for (let i in users) {
+//     user = users[i];
+//     if ( user.active ) {
+//         console.log( user );
+//         break;
+//     }
+// };
+
+// // lodashを使った場合
+// const user = _.find(users, function(o) { return o.active; });
+// console.log( user );
 
 
 
