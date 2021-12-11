@@ -60,5 +60,11 @@ const users = [
 // const user = _.find(users, function(o) { return o.active; });
 // console.log( user );
 
+// --------------------------------------------------
+// 問題：配列 users で年齢が36歳のユーザーデータを取得する
+// --------------------------------------------------
 
+// 条件に合う（第２引数で渡した関数がtrueを返す）ものだけに絞り込んで返す
+const userNewArray = _.filter(users, function(user) { return user.age == 36; });
+console.log( userNewArray );
 
